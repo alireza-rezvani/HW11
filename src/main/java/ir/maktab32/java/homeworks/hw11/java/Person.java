@@ -6,6 +6,9 @@ public class Person {
     private String lastName;
     private String phoneNumber;
 
+    public Person() {
+    }
+
     public Person(Long id, String firstName, String lastName, String phoneNumber) {
         this.id = id;
         this.firstName = firstName;
@@ -47,12 +50,11 @@ public class Person {
 
     @Override
     public String toString() {
-        return "Person{" +
-                "id=" + id +
-                ", firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", phoneNumber='" + phoneNumber + '\'' +
-                '}';
+        return "Person -->"
+                +" ID: " + id
+                +" First Name: " + firstName
+                +" Last Name: " + lastName
+                +" Phone Number: " + phoneNumber;
     }
 }
 
