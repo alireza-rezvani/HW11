@@ -50,11 +50,7 @@ public class Person {
 
     @Override
     public String toString() {
-        return "Person -->"
-                +" ID: " + id
-                +" First Name: " + firstName
-                +" Last Name: " + lastName
-                +" Phone Number: " + phoneNumber;
+        return String.format("Person -->\t%-5d\t%-15s\t%-15s\t%-15s",id,firstName,lastName,phoneNumber);
     }
 }
 
