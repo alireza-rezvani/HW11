@@ -15,8 +15,8 @@ public class Application {
 
         List<Person> personList = new ArrayList<>();
         personList.add(new Person(1L, "Ali", "Alavi", "09121111111"));
-        personList.add(new Person(2L, "Reza", "Rezayi", "09101111111"));
-        personList.add(new Person(3L, "Mohammad", "Mohammadi", "09351111111"));
+        personList.add(new Person(2L, "Reza", "Razavi", "09101111111"));
+        personList.add(new Person(3L, "Ahmad", "Ahmadi", "09351111111"));
 
         writePersonToExcel(personList);
         readPersonFromExcel().forEach(System.out::println);
